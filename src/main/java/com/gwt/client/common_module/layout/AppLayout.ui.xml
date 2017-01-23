@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:gwt="urn:import:com.google.gwt.user.client.ui">
+
+
+	<gwt:DockLayoutPanel ui:field="dockLayoutPanel" unit="PX">
+		<gwt:north size='80'>
+			<gwt:HTMLPanel styleName="header">
+				<gwt:Image url="static/img/logo.png" width="150px"/>
+				<div class="links">
+					<a href="#upload:" class="link">upload</a>
+					<a href="#greeting:" class="link">greeting</a>
+					<a href="/help"><img src="static/img/help.gif" width="35px"></img></a>
+			   </div>
+			</gwt:HTMLPanel>
+		</gwt:north>
+		<gwt:center>
+			<gwt:SimplePanel ui:field="appContent" />
+		</gwt:center>
+		<gwt:south size='50'>
+			<gwt:HTMLPanel styleName="footer">
+				<gwt:Label>junior production 2017</gwt:Label>
+			</gwt:HTMLPanel>
+		</gwt:south>
+	</gwt:DockLayoutPanel>
+</ui:UiBinder>

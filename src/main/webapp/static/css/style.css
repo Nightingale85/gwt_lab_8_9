@@ -1,0 +1,87 @@
+.header {
+    color:white;
+    text-align:left;
+    padding:5px;
+    border-bottom: 3px solid #db9739;
+    padding-bottom: 10px;
+    min-height: 60px;
+}
+
+.footer {
+    color:#db9739;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    font-size: 150%;
+    padding-bottom: 10px;
+    border-top: 3px solid #db9739;
+    padding-top: 10px;
+}
+
+.label{
+    float:left;
+    color:gold;
+    font:20px Verdana;
+    padding-right:10px;
+    padding-top:3px;
+}
+
+.input{
+    float: right;
+}
+
+.button{
+    margin-top:10px;
+    border-radius:4px;
+    width:60px;
+    height:30px;
+    background-color: gray;
+}
+
+input{
+    border-radius:3px;
+    width:250px;
+    height:30px;
+    font-size:medium;
+}
+
+.in-system{
+    padding-top:150px;
+    text-align:center
+}
+
+.log-out {
+    color:gray;
+    font:20px Verdana;
+}
+
+.greeting {
+    padding-bottom:30px;
+    color: beige;
+    font:40px Verdana;
+}
+
+.links {
+    float: right;
+    font:20px Verdana;
+    padding-top:30px;
+}
+
+.link {
+    color: beige;
+    padding-top:50px;
+    text-decoration: none;
+}
+
+.upload{
+    background-color: beige;
+    margin-left:auto;
+    margin-right:auto;
+    float:left;
+
+}

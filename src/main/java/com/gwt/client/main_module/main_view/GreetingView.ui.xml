@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:gwt="urn:import:com.google.gwt.user.client.ui">
+	<ui:with type="com.gwt.client.main_module.i18n.Message" field="i18n"/>
+
+	<gwt:HTMLPanel>
+		<div class="in-system">
+			<gwt:Label ui:field="userGreeting" text="" styleName="greeting"/>
+			<gwt:Anchor ui:field="logOut" text="{i18n.logout}" styleName="log-out"/>
+		</div>
+	</gwt:HTMLPanel>
+	
+</ui:UiBinder>
+ 

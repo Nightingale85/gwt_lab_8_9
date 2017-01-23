@@ -1,0 +1,23 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:gwt="urn:import:com.google.gwt.user.client.ui">
+
+	<gwt:HTMLPanel>
+		<div class="in-system">
+		</div>
+		<gwt:FormPanel ui:field="uploadForm" styleName="upload">
+
+			<gwt:HorizontalPanel>
+
+				<gwt:FileUpload ui:field="uploadField" name="file"></gwt:FileUpload>
+				<gwt:Button ui:field="uploadButton">upload</gwt:Button>
+				<gwt:Button ui:field="clearButton">clear</gwt:Button>
+
+			</gwt:HorizontalPanel>
+		</gwt:FormPanel>
+		<div>
+			<gwt:FlexTable ui:field="table"></gwt:FlexTable>
+		</div>
+	</gwt:HTMLPanel>
+</ui:UiBinder>
+ 

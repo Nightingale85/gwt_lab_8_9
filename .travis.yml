@@ -1,0 +1,7 @@
+# .travis.yml
+language: java
+
+jdk:
+  - oraclejdk7
+
+script: mvn clean verify
