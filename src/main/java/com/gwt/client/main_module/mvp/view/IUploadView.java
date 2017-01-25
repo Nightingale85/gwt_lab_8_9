@@ -7,6 +7,7 @@ public interface IUploadView extends IsWidget {
 	void setPresenter(IUploadPresenter presenter);
 
 	interface IUploadPresenter {
-
+		void clear();
+		void submit();
 	}
 }

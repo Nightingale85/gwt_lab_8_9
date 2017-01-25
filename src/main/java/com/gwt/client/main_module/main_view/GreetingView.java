@@ -16,7 +16,9 @@ import java.util.Date;
 
 
 public class GreetingView extends Composite implements IGreetingView {
+
 	interface GreetingViewUiBinder extends UiBinder<Widget, GreetingView> {	}
+
 	private static GreetingViewUiBinder uiBinder = GWT.create(GreetingViewUiBinder.class);
 	private final Messenger messenger = Messenger.getInstance();
 	@UiField(provided = true)

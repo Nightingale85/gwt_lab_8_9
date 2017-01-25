@@ -1,10 +1,8 @@
 package com.gwt.client.upload_module;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.*;
 import com.gwt.client.main_module.mvp.view.IUploadView;
@@ -56,13 +54,37 @@ public class UploadView extends Composite implements IUploadView {
 		this.presenter = presenter;
 	}
 
-	@UiHandler("uploadButton")
-	public void onClickUploadButton(ClickEvent clickEvent) {
-		uploadForm.submit();
+
+	public Button getClearButton() {
+		return clearButton;
 	}
 
-	@UiHandler("clearButton")
-	public void onClickClearButton(ClickEvent clickEvent) {
-		table.removeAllRows();
+	public void setClearButton(Button clearButton) {
+		this.clearButton = clearButton;
+	}
+
+	public FlexTable getTable() {
+		return table;
+	}
+
+	public void setTable(FlexTable table) {
+		this.table = table;
+	}
+
+	public Button getUploadButton() {
+		return uploadButton;
+	}
+
+	public void setUploadButton(Button uploadButton) {
+		this.uploadButton = uploadButton;
+	}
+
+	public FormPanel getUploadForm() {
+		return uploadForm;
+	}
+
+	public void setUploadForm(FormPanel uploadForm) {
+		this.uploadForm = uploadForm;
 	}
 }
+
